@@ -15,7 +15,6 @@ dns = [
 defaultRoute = "PROXY"
 proxy = "surge"
 rulesets = [
-    "DIRECT",
     "lazyssrule"
 ]
 
@@ -76,8 +75,8 @@ obfsParam = ""
 remark = "新加坡"
 
 
-[RULESET.DIRECT]
-name = "DIRECT"
+[RULESET.lazyssrule]
+name = "lazyssrule"
 rules = [
   "DOMAIN-SUFFIX, mzstatic.com, DIRECT",
   "DOMAIN-SUFFIX, icloud-content.com, DIRECT",
@@ -207,12 +206,7 @@ rules = [
   "IP-CIDR, 192.168.0.0/16, DIRECT",
   "IP-CIDR, 10.0.0.0/8, DIRECT",
   "IP-CIDR, 100.64.0.0/10, DIRECT",
-  "GEOIP, CN, DIRECT"
-]
-
-[RULESET.lazyssrule]
-name = "Lazy SS Rule"
-rules = [
+  "GEOIP, CN, DIRECT",
   "DOMAIN, gs.apple.com, PROXY",
   "DOMAIN, beta.itunes.apple.com, PROXY",
   "DOMAIN-MATCH, google, PROXY",
@@ -528,12 +522,7 @@ rules = [
   "IP-CIDR, 149.154.164.0/22, PROXY",
   "IP-CIDR, 149.154.172.0/22, PROXY",
   "IP-CIDR, 149.154.160.0/22, PROXY",
-  "IP-CIDR, 149.154.168.0/22, PROXY"
-]
-
-[RULESET.REJECT]
-name = "REJECT"
-rules = [
+  "IP-CIDR, 149.154.168.0/22, PROXY",
   "DOMAIN-MATCH, adsmogo, REJECT",
   "DOMAIN-SUFFIX, acs86.com, REJECT",
   "DOMAIN-SUFFIX, adcome.cn, REJECT",
