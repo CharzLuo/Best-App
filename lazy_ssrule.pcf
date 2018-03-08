@@ -16,8 +16,7 @@ defaultRoute = "PROXY"
 proxy = "surge"
 rulesets = [
     "DIRECT",
-    "lazyssrule",
-    "REJECT"
+    "lazyssrule"
 ]
 
 [PROXY.surge]
