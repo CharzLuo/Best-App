@@ -76,7 +76,7 @@ remark = "新加坡"
 
 
 [RULESET.lazyssrule]
-name = "lazyssrule"
+name = "Lazy SS Rule"
 rules = [
   "DOMAIN-SUFFIX, mzstatic.com, DIRECT",
   "DOMAIN-SUFFIX, icloud-content.com, DIRECT",
